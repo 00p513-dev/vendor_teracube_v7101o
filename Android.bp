@@ -48,3 +48,27 @@ dex_import {
 	jars: ["proprietary/framework/mediatek-ims-base.jar"],
 }
 
+dex_import {
+	name: "mediatek-ims-common",
+	owner: "teracube",
+	jars: ["proprietary/framework/mediatek-ims-common.jar"],
+}
+
+dex_import {
+	name: "mediatek-telecom-common",
+	owner: "teracube",
+	jars: ["proprietary/framework/mediatek-telecom-common.jar"],
+}
+
+dex_import {
+	name: "mediatek-telephony-base",
+	owner: "teracube",
+	jars: ["proprietary/framework/mediatek-telephony-base.jar"],
+}
+
+dex_import {
+	name: "mediatek-telephony-common",
+	owner: "teracube",
+	jars: ["proprietary/framework/mediatek-telephony-common.jar"],
+}
+

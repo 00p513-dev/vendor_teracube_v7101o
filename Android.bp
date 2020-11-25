@@ -20,16 +20,6 @@ soong_namespace {
 }
 
 android_app_import {
-	name: "Nfc_st",
-	owner: "teracube",
-	apk: "proprietary/app/Nfc_st/Nfc_st.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "ImsService",
 	owner: "teracube",
 	apk: "proprietary/priv-app/ImsService/ImsService.apk",
@@ -38,18 +28,6 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-}
-
-dex_import {
-	name: "com.st.android.nfc_dta_extensions",
-	owner: "teracube",
-	jars: ["proprietary/framework/com.st.android.nfc_dta_extensions.jar"],
-}
-
-dex_import {
-	name: "com.st.android.nfc_extensions",
-	owner: "teracube",
-	jars: ["proprietary/framework/com.st.android.nfc_extensions.jar"],
 }
 
 dex_import {
@@ -68,29 +46,5 @@ dex_import {
 	name: "mediatek-ims-base",
 	owner: "teracube",
 	jars: ["proprietary/framework/mediatek-ims-base.jar"],
-}
-
-dex_import {
-	name: "mediatek-ims-common",
-	owner: "teracube",
-	jars: ["proprietary/framework/mediatek-ims-common.jar"],
-}
-
-dex_import {
-	name: "mediatek-telecom-common",
-	owner: "teracube",
-	jars: ["proprietary/framework/mediatek-telecom-common.jar"],
-}
-
-dex_import {
-	name: "mediatek-telephony-base",
-	owner: "teracube",
-	jars: ["proprietary/framework/mediatek-telephony-base.jar"],
-}
-
-dex_import {
-	name: "mediatek-telephony-common",
-	owner: "teracube",
-	jars: ["proprietary/framework/mediatek-telephony-common.jar"],
 }
 

@@ -18,19 +18,10 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/teracube/v7101o
 
 PRODUCT_COPY_FILES += \
-    vendor/teracube/v7101o/proprietary/bin/nfcstackp:$(TARGET_COPY_OUT_SYSTEM)/bin/nfcstackp \
-    vendor/teracube/v7101o/proprietary/bin/kpoc_charger:$(TARGET_COPY_OUT_SYSTEM)/bin/kpoc_charger \
     vendor/teracube/v7101o/proprietary/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM)/bin/vtservice \
     vendor/teracube/v7101o/proprietary/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.vtservice.rc \
-    vendor/teracube/v7101o/proprietary/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/kpoc_charger.rc \
-    vendor/teracube/v7101o/proprietary/etc/nfcee_access.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/nfcee_access.xml \
-    vendor/teracube/v7101o/proprietary/etc/permissions/com.st.android.nfc_dta_extensions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.st.android.nfc_dta_extensions.xml \
-    vendor/teracube/v7101o/proprietary/etc/permissions/com.st.android.nfc_extensions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.st.android.nfc_extensions.xml \
-    vendor/teracube/v7101o/proprietary/framework/mediatek-ims-extension-plugin.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/mediatek-ims-extension-plugin.jar \
-    vendor/teracube/v7101o/proprietary/framework/mediatek-ims-extension-plugin.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/mediatek-ims-extension-plugin.jar \
+    vendor/teracube/v7101o/proprietary/etc/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
     vendor/teracube/v7101o/proprietary/lib/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcomutils.so \
-    vendor/teracube/v7101o/proprietary/lib/libdtaNfaProvider.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdtaNfaProvider.so \
-    vendor/teracube/v7101o/proprietary/lib/libicuXD.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libicuXD.so \
     vendor/teracube/v7101o/proprietary/lib/libimsma.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsma.so \
     vendor/teracube/v7101o/proprietary/lib/libimsma_adapt.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsma_adapt.so \
     vendor/teracube/v7101o/proprietary/lib/libimsma_rtp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsma_rtp.so \
@@ -42,45 +33,25 @@ PRODUCT_COPY_FILES += \
     vendor/teracube/v7101o/proprietary/lib/libmtklimiter.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtklimiter.so \
     vendor/teracube/v7101o/proprietary/lib/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtkperf_client.so \
     vendor/teracube/v7101o/proprietary/lib/libmtkshifter.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtkshifter.so \
-    vendor/teracube/v7101o/proprietary/lib/libnfc_st_dta.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libnfc_st_dta.so \
-    vendor/teracube/v7101o/proprietary/lib/libnfc_st_dta_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libnfc_st_dta_jni.so \
-    vendor/teracube/v7101o/proprietary/lib/libshowlogo.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libshowlogo.so \
     vendor/teracube/v7101o/proprietary/lib/libsignal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsignal.so \
     vendor/teracube/v7101o/proprietary/lib/libsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsink.so \
     vendor/teracube/v7101o/proprietary/lib/libsource.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsource.so \
-    vendor/teracube/v7101o/proprietary/lib/libstnfc-nci.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstnfc-nci.so \
-    vendor/teracube/v7101o/proprietary/lib/libstnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstnfc_nci_jni.so \
-    vendor/teracube/v7101o/proprietary/lib/libsysenv_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsysenv_system.so \
     vendor/teracube/v7101o/proprietary/lib/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvcodec_cap.so \
     vendor/teracube/v7101o/proprietary/lib/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvcodec_capenc.so \
     vendor/teracube/v7101o/proprietary/lib/libvt_avsync.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvt_avsync.so \
     vendor/teracube/v7101o/proprietary/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
-    vendor/teracube/v7101o/proprietary/lib64/libdtaNfaProvider.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdtaNfaProvider.so \
-    vendor/teracube/v7101o/proprietary/lib64/libicuXD.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libicuXD.so \
     vendor/teracube/v7101o/proprietary/lib64/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtk_vt_wrapper.so \
     vendor/teracube/v7101o/proprietary/lib64/libmtkaudio_utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkaudio_utils.so \
     vendor/teracube/v7101o/proprietary/lib64/libmtkavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkavenhancements.so \
     vendor/teracube/v7101o/proprietary/lib64/libmtklimiter.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtklimiter.so \
     vendor/teracube/v7101o/proprietary/lib64/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkperf_client.so \
     vendor/teracube/v7101o/proprietary/lib64/libmtkshifter.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkshifter.so \
-    vendor/teracube/v7101o/proprietary/lib64/libnfc_st_dta.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnfc_st_dta.so \
-    vendor/teracube/v7101o/proprietary/lib64/libnfc_st_dta_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libnfc_st_dta_jni.so \
-    vendor/teracube/v7101o/proprietary/lib64/libstnfc-nci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstnfc-nci.so \
-    vendor/teracube/v7101o/proprietary/lib64/libstnfc_nci_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstnfc_nci_jni.so \
-    vendor/teracube/v7101o/proprietary/lib64/libsysenv_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsysenv_system.so \
     vendor/teracube/v7101o/proprietary/lib64/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_cap.so \
     vendor/teracube/v7101o/proprietary/lib64/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_capenc.so \
     vendor/teracube/v7101o/proprietary/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 PRODUCT_PACKAGES += \
-    Nfc_st \
     ImsService \
-    com.st.android.nfc_dta_extensions \
-    com.st.android.nfc_extensions \
     mediatek-common \
     mediatek-framework \
-    mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common
+    mediatek-ims-base
